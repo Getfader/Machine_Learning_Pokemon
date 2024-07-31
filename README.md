@@ -33,16 +33,18 @@ Key features were selected based on their relevance to clustering:
 - **Algorithm Used:** K-Means clustering was employed to segment Pokémon into distinct clusters.
   - **Number of Clusters:** Four clusters were determined based on the elbow method and silhouette scores.
   - **Cluster Descriptions:**
-    - **Cluster 0:** Balanced Performers with moderate attributes.
+    - **Cluster 0:** Includes all the starter Pokémon and generally has balanced stats.
     - **Cluster 1:** Smaller and less powerful Pokémon.
     - **Cluster 2:** Pokémon with moderate performance.
     - **Cluster 3:** Powerful and rare Pokémon with high stats.
+![Cluster chart](Images/clusters.png)
 
 ## Cluster Visualization
 
 ### Word Clouds
 - **Purpose:** Generate word clouds for each cluster to visually represent the types of Pokémon within each cluster.
 - **Custom Color Palette:** Each Pokémon type is assigned a specific color to highlight type distributions.
+![Wordcloud for the Big & Strong cluster](Images/wordcloud_cluster_3.png)
 
 ### Statistical Analysis
 - **T-Tests:** Conducted pairwise t-tests to compare the mean height and weight between Cluster 3 and other clusters, adjusting for multiple comparisons using Bonferroni correction.
@@ -53,14 +55,15 @@ Key features were selected based on their relevance to clustering:
 ### Attribute Bar Charts
 - **Purpose:** Display the average values of height, weight, and total stats for each cluster to provide a clear comparison of these attributes.
 - **Customization:** Bar charts are color-coded according to clusters and saved as high-resolution PNG images.
-
+![Comparing the size between the clusters](Images/comparing_size.png)
 ### Growth Rate Distribution
 - **Purpose:** Visualize the distribution of growth rate categories across clusters using a count plot.
 - **Color Mapping:** Different colors represent various growth rate categories to illustrate their prevalence in each cluster.
-
+![Growth rate distribution between the clusters](Images/growth_rate.png)
 ### Individual Pokémon Stats
 - **Functionality:** Plot individual Pokémon stats (e.g., Attack, Defense) to provide a detailed view of specific Pokémon characteristics.
-- **Example:** Detailed stats for Pokémon like Typhlosion are plotted for comparison.
+- **Example:** Detailed stats for Pokémon like Typhlosion and Charizard are plotted for comparison, pointing out that they do in fact have the exact same stats.
+![Charizard stats compared to Typhlosion.](Images/charizardstats.png)
 
 ## Usage
 
